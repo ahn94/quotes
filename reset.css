@@ -1,0 +1,49 @@
+/************Reset**************/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,
+body,
+div,
+object,
+iframe,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+header,
+footer,
+nav,
+section,
+article,
+hgroup,
+figure {
+	display: block;
+}
+legend {
+	display: none;
+}
+/************End Reset**************/
+
+
+
+/******Media Queries*******/
+
+@media all and (min-width:40em) {
+}
+
+@media screen and (min-width: 68em) {
+}
