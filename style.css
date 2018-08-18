@@ -8,7 +8,8 @@ body {
   position: relative;
   width: 1920px;
   height: 1080px; }
-  body video {
+  body video,
+  body img {
     position: relative;
     z-index: -100;
     top: 0;
@@ -16,9 +17,9 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%); }
+    filter: brightness(30%); }
   body .title {
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     color: #999;
     font-size: 100px;
     font-weight: lighter; }
