@@ -1,12 +1,13 @@
 @import url(reset.css);
 html {
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: "PT Serif", serif; }
 
 body {
   overflow: hidden;
   position: relative;
-  width: 1080px;
-  height: 1920px; }
+  width: 1920px;
+  height: 1080px; }
   body video {
     position: relative;
     z-index: -100;
@@ -18,26 +19,31 @@ body {
     filter: brightness(40%); }
   body .title {
     margin-bottom: 1rem;
-    color: gray;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+    color: #999;
     font-size: 100px;
     font-weight: lighter; }
   body .quote {
-    color: lightgray;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
-    font-size: 70px;
-    font-weight: lighter; }
+    color: #ccc;
+    font-size: 70px; }
   body .author {
-    color: lightgray;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
-    font-size: 80px;
-    font-weight: lighter;
+    margin-top: 1rem;
+    color: #ccc;
+    font-size: 70px;
     text-align: right; }
+    body .author::before {
+      content: "\2014\00a0"; }
   body #quote-wrapper {
     position: absolute;
-    top: 10%;
-    right: 10%;
-    left: 10%;
-    margin: 10px; }
+    bottom: 0;
+    width: 1080px;
+    height: 1080px;
+    padding: 5rem;
+    transform: rotate(270deg);
+    transform-origin: center; }
+
+.toggle-content {
+  display: none; }
+  .toggle-content.is-visible {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */
