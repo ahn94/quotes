@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
         //sort by date
         response.sort(function(a, b) {
-            return new Date(a.gsx$date.$t) - new Date(b.gsx$date.$t);
+            return new Date(b.gsx$date.$t) - new Date(a.gsx$date.$t);
         })
         
         console.log(response);
