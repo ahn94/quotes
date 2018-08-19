@@ -11,12 +11,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         response.sort(function(a, b) {
             return new Date(a.gsx$date.$t) - new Date(b.gsx$date.$t);
         })
+        
+        console.log(response);
 
         //formatted json
         q = {
             quote: response[0].gsx$quote.$t,
             author: response[0].gsx$author.$t
         }
+        
+        
 
         // html elements
         var quote = document.querySelector("#quote");
