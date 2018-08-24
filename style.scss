@@ -8,8 +8,10 @@ html {
 body {
 	overflow: hidden;
 	position: relative;
-	width: 1920px;
-	height: 1080px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+
 
 
 	video,
@@ -50,10 +52,13 @@ body {
 
 	#quote-wrapper {
 		position: absolute;
-		bottom: 0;
-		width: 1080px;
-		height: 1080px;
+		top: 0;
+		width: 40%;
+		height: 0;
+		margin-bottom: 2rem;
 		padding: 5rem;
+		padding-bottom: 46%;
+		background: lightslategrey;
 		transform: rotate(270deg);
 		transform-origin: center;
 	}
