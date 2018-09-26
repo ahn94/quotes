@@ -39,4 +39,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         
     })
+
+
+
+
   });
+
+  window.addEventListener("load", function(){
+    g = document.body
+    var wrapper = document.getElementById('quote-wrapper');
+    console.log(wrapper.clientHeight);
+    console.log(wrapper.style.height);
+    wrapper.style.height = g.clientHeight + "px";
+    wrapper.style.width = g.clientHeight + "px";
+    // console.log(wrapper.clientWidth);
+
+    console.log(g.clientWidth)
+    client.log(screen.height);
+    client.log(screen.width);
+
+    
+});
